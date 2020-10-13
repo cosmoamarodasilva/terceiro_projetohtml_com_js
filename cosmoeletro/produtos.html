@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang = "pt-br">
+	<head>
+	<meta charset = "UTF-8">
+		<title> Produtos cosmoeletro </title>
+		<!--CSS sendo acessado no arquivo esterno-->
+		<link rel= "stylesheet" href="./css/estilo.css">
+		<script src="scriptsfunções/scripts.js"></script>
+
+	</head>
+
+	<body>
+		<h1>ESCOLHA SEU PRODUTO E PAGUE COM BITCOIN (BTC)</h1>
+
+		<!--Inicio do menu-->
+		<nav id="menu">
+			<a href="index.html">Pagina inicial</a>
+			<a href="Lojas.html">Nossas lojas</a>
+			<a href="faleconosco.html">Fale conosco</a>
+		</nav>
+		<!--Final do menu-->
+
+		<!--Inicio dos produtos-->
+		<header>
+		<h2>Produtos</h2>
+		</header>
+		<section class="categorias">
+				<ul>
+					<li class="li_cor" onclick="mostrar_todos('TVs')">Todos produtos(11)</li>
+					<li class="li_cor" onclick="mostrar_eletros('Eletrodomesticos')">Etetrodomésticos (2)</li>
+					<li class="li_cor" onclick="mostrar_eletros('TVs')">Televisores (3)</li>
+					<li class="li_cor" onclick="mostrar_eletros('Moveis')">Móveis (4)</li>
+					<li class="li_cor" onclick="mostrar_eletros('Informatica')">Informática (2)</li>
+				</ul>
+		<br><br><br>
+		</section>
+		<section class="produtos">
+			
+				<div class="box_produtos" id="Eletrodomesticos" style="display:inline-block">
+					<img class="imagens" src="./imagens/refrigerador consul.jpg" width="400px" onclick="destaque(this)"> 
+					<br>
+					<p class="descrição">Refrigerador Consul. Cor:Branco</p>
+					<hr>
+					<p class="descrição"><strike>1.500,00</strike></p>
+					<p class="preço">1.300,00</p>
+				</div>
+
+				<div class="box_produtos" id="Eletrodomesticos" style="display:inline-block">
+					<img class="imagens" src="./imagens/maquina de lavar.png" width="400px" onclick="destaque(this)">
+					<br>
+					<p class="descrição">Maquina de lavar Consul 5 kilos. Cor: Branco</p>
+					<hr>
+					<p class="descrição"><strike>2.100,00</strike></p>
+					<p class="preço">1.900,00</p>
+				</div>
+		
+
+				<div class="box_produtos" id="TVs" style="display:inline-block">
+					<img class="imagens" src="./imagens/smart tv.png" width="300px" onclick="destaque(this)">
+					<br>
+					<p class="descrição">Smart TV 55 polegadas</p>
+					<hr>
+					<p class="descrição"><strike>1.000,00</strike></p>
+					<p class="preço">950,00</p>
+				</div>
+				<br><br><br><br><br>
+
+				<div class="box_produtos" id="TVs" style="display:inline-block">
+					<img class="imagens" src="./imagens/TV 32 polegadas.jpg" width="300px" onclick="destaque(this)">
+					<br>
+					<p class="descrição">TV 32 Polegadas</p>
+					<hr>
+					<p class="descrição"><strike>999,00</strike></p>
+					<p class="preço">899,00</p>
+				</div>
+
+				<div class="box_produtos" id="TVs" style="display:inline-block">
+					<img class="imagens" src="./imagens/TV 4K.jpg" width="300px" onclick="destaque(this)">
+					<br>
+					<p class="descrição">TV 4K 55 Polegadas</p>
+					<hr>
+					<p class="descrição"><strike>3.000,00</strike></p>
+					<p class="preço">2.800,00</p>
+				</div>
+	
+				<div class="box_produtos" id="Moveis" style="display:inline-block">
+					<img class="imagens" src="./imagens/sofa 3 lugares.png" width="300px" onclick="destaque(this)">
+					<br>
+					<p class="descrição">Sófa 3 lugares.</p>
+					<hr>
+					<p class="descrição"><strike>1.200,00</strike></p>
+					<p class="preço">1.100,00</p>
+				</div>
+				<br><br><br><br><br>
+
+				<div class="box_produtos" id="Moveis" style="display:inline-block">
+					<img class="imagens" src="./imagens/guarda roupas.png" width="280px" onclick="destaque(this)">
+					<br>
+					<p class="descrição">Guarda Roupas 4 portas.</p>
+					<hr>
+					<p class="descrição"><strike>2.100,00</strike></p>
+					<p class="preço">2.000,00</p>
+				</div>
+
+				<div class="box_produtos" id="Moveis" style="display:inline-block">
+					<img class="imagens" src="./imagens/colchão.jpg" width="400px" onclick="destaque(this)">
+					<br>
+					<p class="descrição">Colchão de casal.</p>
+					<hr>
+					<p class="descrição"><strike>999,00</strike></p>
+					<p class="preço">850,00</p>
+				</div>
+	
+				<div class="box_produtos" id="Moveis" style="display:inline-block">
+					<img class="imagens" src="./imagens/cama.png" width="380px" onclick="destaque(this)">
+					<br>
+					<p class="descrição">Cama de casal</p>
+					<hr>
+					<p class="descrição"><strike>2.250,00</strike></p>
+					<p class="preço">2.100,00</p>
+				</div>
+				<br><br><br><br><br>
+
+				<div class="box_produtos" id=Informatica style="display:inline-block">
+					<img class="imagens" src="./imagens/laptop.png" width="250px" onclick="destaque(this)">
+					<br>
+					<p class="descrição">Notebook Sansung</p>
+					<hr>
+					<p class="descrição"><strike>2.600,00</strike></p>
+					<p class="preço">2.499,00</p>
+				</div>
+
+				<div class="box_produtos" id="Informatica" style="display:inline-block">
+					<img class="imagens" src="./imagens/impressora.png" width="150px"onclick="destaque(this)">
+					<br>
+					<p class="descrição">Impressora WIFI Epson</p>
+					<hr>
+					<p class="descrição"><strike>800,00</strike></p>
+					<p class="preço">760,00</p>
+				</div>
+		</section>
+		<!--Fim dos produtos-->
+		
+		<footer id="rodape">
+			<h3>Forma de pagamento somente com <strong>Bitcoin (BTC)</strong></h3>
+			<img src = "./imagens/bitcoin.png" width="3%" alt="Pagamento somente com Bitcoin (BTC)">
+		</footer>
+			
+    </body>
+
+
+    </html>
